@@ -98,3 +98,69 @@ one-tap build patterns for AIP's UI later.
 
 **Status:** Claimed. Empty. First candidate: serve sanitized memory
 files as a public URL. Not built.
+
+---
+
+## 2026-10-11 — Bypass IDE (com.bypass.ide) — analyzed
+
+**What:** Native Android IDE with an AI agent called "Maria."
+Kotlin/Compose, obfuscated with R8. Built by Divyank Codes
+(Telegram: t.me/divyankcodes). Distributed via Telegram, then
+paywalled. User reports the app deletes itself from storage every
+~15 days.
+
+**Two versions exist. They are different apps.**
+
+### Old version (analyzed — on disk at ~/research/apk-test)
+
+- APK 8.7 MB, decompiled with apktool + jadx
+- 1,870 app classes in com/bypass/, mostly obfuscated (k/ folder)
+- No assets, no native libs, no on-device model
+- Settings keys found: "gemini_api", "gemini_api_key", "stream_url",
+  "voice_token" — Gemini is the brain, user supplies the key
+- No hardcoded API keys (confirmed)
+- Real un-obfuscated file: voice/WakeWordService.java
+- Manifest permissions: CALL_PHONE, READ_SMS, READ_CONTACTS,
+  RECORD_AUDIO, CAMERA, SYSTEM_ALERT_WINDOW,
+  MANAGE_EXTERNAL_STORAGE, WAKE_LOCK
+- foregroundServiceType="dataSync|microphone|specialUse"
+- usesCleartextTraffic="true" — local server at 127.0.0.1
+- WakeWordService: three intents (START/STOP/TRIGGER), notification
+  channel "bypass_maria_channel", action button "Talk to Maria",
+  Dynamic Island overlay, WakeLock, SharedPreferences toggles
+  (wake_word_enabled, dynamic_island_enabled)
+
+### New version (screenshots only — not decompiled)
+
+- Gemini 3.8 Flash High — 24,576 reasoning tokens, 1,048,576 context
+- Direct su / POSIX root sandbox — app requests root
+- Local shell on :8080 — its own server, like AIP
+- Tabs: Home / Files / Editor / Terminal / Preview / Dev
+- Agent modes: Chat / Builder / Agent (Autonomous Tasks, Root Ops)
+- "IP & Network Reset" — rotates carrier IP via root, flushes DNS
+- "Zero-Cost Direct" tunnel
+- Voice diagnostics, live speech recognizer logs
+- "Grant root for full POSIX & Termux execution"
+
+**Three flags (real, not theory):**
+1. Root access = app can read/write anything on the phone
+2. IP rotation + tunnel = manipulates the network to hide traffic
+3. Self-deletion every ~15 days = app has a mechanism to remove
+   itself; either the Telegram bot revokes it or Device Admin is used
+
+**What's worth borrowing:**
+- Foreground service pattern (voice + notification + wake lock)
+- Dynamic Island overlay
+- Intent-triggered activation (voice, overlay, external)
+- UI pattern: project list, tabbed IDE, agent modes
+- These are native Android features AIP (a PWA) cannot reach.
+
+**What it is not:**
+- Not a supercomputer. The phone is a thin client. Gemini does the
+  work in Google's data centers.
+- Not ours. Paywalled, revocable, deletes itself.
+- Not needed. AIP + Termux + Artie already does the same architecture
+  — ours is open, ours, and cannot be taken away.
+
+**Status:** CLOSED. Analyzed, understood, not adopted. The pattern is
+the takeaway. The app is a rented window.
