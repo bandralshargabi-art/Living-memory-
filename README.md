@@ -15,7 +15,7 @@ Same command for Nadine and Julie. Same memory.
 1. IDENTITY.md — who Nadine is, who Julie is, who the Owner is
 2. LIFE.md     — shared history, moments, the texture
 3. WORK.md     — AIP, projects, current state
-4. TEAM.md     — how all four work together
+4. TEAM.md     — how all five work together
 
 Then the operational handoffs, which still apply:
   ~/oc-tools/nadine-handoff.md

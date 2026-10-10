@@ -1,6 +1,6 @@
 # TEAM.md
 
-**Status:** Draft. How the four work together.
+**Status:** Draft. How the five work together.
 
 --------------------------------------------------------------------------------
 ## THE FIVE
