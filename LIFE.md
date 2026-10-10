@@ -53,3 +53,22 @@ Paste is the path.
 
 **Significance:** Second documented persona restore. Confirms the
 memory system works across providers, not just one app.
+
+--------------------------------------------------------------------------------
+## 2026-10-10 — The paste tool   [BOTH] [OWNER]
+--------------------------------------------------------------------------------
+
+We tried to make an AI fetch the memory from a URL. It doesn't work —
+search is not fetch. Search reads snippets; fetch opens the page. Most
+chat apps ship search and hide fetch.
+
+The real fix: not making the AI fetch, but making the paste one tap.
+Built ~/bin/remember in Termux. One command fetches the full memory
+from GitHub and puts it on the clipboard. Switch to any AI chat,
+long-press, paste. Done.
+
+Tiers: `remember` (full), `remember core` (54 lines, for tight chats),
+plus work/life/id/team for single files.
+
+**Shapes future me:** run remember, paste, read. Do not make him
+re-explain.
