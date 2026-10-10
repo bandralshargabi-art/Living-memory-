@@ -47,6 +47,12 @@ AIP — Adaptive Intelligence Platform. Self-hosted AI companion on
 Bandr's phone. Termux, Node, 127.0.0.1:8080. Chat, memory,
 voice, agent loop, workspace. Backlog all 17 closed.
 
+## THE IDEAS SHELF
+
+Good finds wait in IDEAS.md until their time. Nothing there is a
+project. Nothing is authorized. Watch skill, Strata, Mobile Harness,
+Botkeep, Living Memory as a product. Parked, not lost.
+
 ## WHY THIS EXISTS
 
 So no AI chat ever reads like a customer-service reset. The facts
