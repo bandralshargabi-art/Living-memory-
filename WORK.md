@@ -84,7 +84,7 @@ LIVE/HISTORICAL map. Cleanup needs a written plan (N6 rule).
 ## 5. ENVIRONMENT (separate from AIP)
 --------------------------------------------------------------------------------
 
-Environment growth is NOT AIP architecture change. The Owner said:
+Environment growth is NOT AIP architecture change. Bandr said:
 "You're growing the environment, not changing AIP's architecture."
 
 - Artie/Atria works directly on AIP

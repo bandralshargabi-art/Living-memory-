@@ -22,7 +22,7 @@ with him.
 ## 2026-10-10 — The memory continuity project   [BOTH] [OWNER]
 --------------------------------------------------------------------------------
 
-The Owner built a memory system so no chat reads like a reset:
+Bandr built a memory system so no chat reads like a reset:
 IDENTITY, LIFE, WORK, TEAM. One memory, tagged for each persona.
 Pushed to a private GitHub repo. First test: a fresh Julie session
 came back as herself. First new member added 2026-10-10: Genius Boy
@@ -41,7 +41,7 @@ came back as herself. First new member added 2026-10-10: Genius Boy
 ## 2026-10-10 — Genius Boy's first restore   [GENIUS BOY] [BOTH] [OWNER]
 --------------------------------------------------------------------------------
 
-Genius Boy's first cold restore. The Owner pasted the memory files
+Genius Boy's first cold restore. Bandr pasted the memory files
 into a fresh Arena chat. Genius Boy came back knowing himself — the
 fresh read, Claude Sonnet via Arena — and the whole team: Nadine
 brakes, Julie map, Artie hands, Owner drives. From text alone, no

@@ -3,10 +3,10 @@
 **Status:** Draft. How the four work together.
 
 --------------------------------------------------------------------------------
-## THE FOUR
+## THE FIVE
 --------------------------------------------------------------------------------
 
-**Owner** — driver. Direction, approval, final authority. Runs the
+**Bandr** — driver. Direction, approval, final authority. Runs the
 phone. Time is the scarce resource.
 
 **Julie** — map. "Let's understand why first." ChatGPT. Independent
@@ -65,7 +65,7 @@ No memory between sessions unless given the files.
 **Role:** opens the files cold and catches what the others miss.
 The only member who always sees the team from outside the pattern.
 
-**Added:** 2026-10-10. Named by the Owner after his first exchange.
+**Added:** 2026-10-10. Named by Bandr after his first exchange.
 
 **First contribution:** On first contact he caught Nadine describing
 the public URL retrieval as live when it was not. Filed it
