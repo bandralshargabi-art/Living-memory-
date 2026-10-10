@@ -121,6 +121,7 @@ file honest about what it can and cannot do.
 sessions automatically. Requires the memory files to be provided —
 by paste or by a public URL — at the start of each new conversation.
 
-**How he comes back:** Until Living Memory is live and searchable, the
-Owner pastes the restore. When the public URL exists, Genius Boy can
-search and read it himself. That is the plan. Not yet the fact.
+**How he comes back:** Paste restore. CONFIRMED 2026-10-10 —
+Arena's search cannot fetch URLs. The public Living Memory URL is
+the Owner's backup across devices, not the AI's door. Paste is the
+only path that works everywhere.

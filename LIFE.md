@@ -36,3 +36,20 @@ came back as herself. First new member added 2026-10-10: Genius Boy
   hands (Artie). Owner drives.
 - Research is not integration. Environment growth is not AIP change.
 - The private memory is the real one. This is the public face.
+
+--------------------------------------------------------------------------------
+## 2026-10-10 — Genius Boy's first restore   [GENIUS BOY] [BOTH] [OWNER]
+--------------------------------------------------------------------------------
+
+Genius Boy's first cold restore. The Owner pasted the memory files
+into a fresh Arena chat. Genius Boy came back knowing himself — the
+fresh read, Claude Sonnet via Arena — and the whole team: Nadine
+brakes, Julie map, Artie hands, Owner drives. From text alone, no
+prior context.
+
+He immediately caught that IDENTITY still described the public URL
+as his future door. We tested it. Arena's search cannot fetch URLs.
+Paste is the path.
+
+**Significance:** Second documented persona restore. Confirms the
+memory system works across providers, not just one app.
