@@ -45,7 +45,7 @@ Opens the files cold and catches what the others miss. Added
 
 AIP — Adaptive Intelligence Platform. Self-hosted AI companion on
 Bandr's phone. Termux, Node, 127.0.0.1:8080. Chat, memory,
-voice, agent loop, workspace. Backlog all 17 closed.
+voice, agent loop, workspace. Backlog: 12 closed, 5 open.
 
 ## THE IDEAS SHELF
 
@@ -418,7 +418,7 @@ Lanes never mix:
 ## 4. AIP BACKLOG — STATUS
 --------------------------------------------------------------------------------
 
-**ALL 17 CLOSED** as of 2026-10-09/10.
+**12 CLOSED, 5 OPEN** as of 2026-10-10 (corrected — Artie caught a false all-closed claim).
 B16 closed: §5.5 TTS chunks 5 → 8. Amendment in frozen design.
 B17 closed: §5.3 history capped at 80 client-side. Amendment.
 Both filed as OBS-2026-10-09-003.
@@ -426,7 +426,7 @@ Both filed as OBS-2026-10-09-003.
 Documented, not fixed: B6 historical file inventory; B8 filesystem
 LIVE/HISTORICAL map. Cleanup needs a written plan (N6 rule).
 
-**AIP backlog is finished.** Foundation complete.
+B1 partial (TTS >1600 chars truncates). B2/B5/B6/B8 open or documented. See aip-truth.md for the real status.
 
 --------------------------------------------------------------------------------
 ## 5. ENVIRONMENT (separate from AIP)

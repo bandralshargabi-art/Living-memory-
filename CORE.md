@@ -45,7 +45,7 @@ Opens the files cold and catches what the others miss. Added
 
 AIP — Adaptive Intelligence Platform. Self-hosted AI companion on
 Bandr's phone. Termux, Node, 127.0.0.1:8080. Chat, memory,
-voice, agent loop, workspace. Backlog all 17 closed.
+voice, agent loop, workspace. Backlog: 12 closed, 5 open.
 
 ## THE IDEAS SHELF
 
