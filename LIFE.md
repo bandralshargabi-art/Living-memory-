@@ -492,3 +492,32 @@ record, two edits, syntax check, stop.
 **What this proves:** Artie on Dahl finishes in minutes what
 timed out five times on Atria. And she holds the rules even when
 the task file tells her not to.
+
+--------------------------------------------------------------------------------
+## 2026-10-13 — Voice got 4x faster   [ARTIE] [BANDR] [NADINE]
+--------------------------------------------------------------------------------
+
+Artie on Dahl made the change. One bounded edit to aip-groq-tts7.js:
+chunks now fetch in parallel batches of 2 instead of one at a time.
+
+Measured, not claimed. Real reply through AIP chat, log read before
+and after:
+
+  Before: 2 chunks, sequential, totalMs=14470
+  After:  2 chunks, parallel,   totalMs=3871
+
+Nearly 4x faster. Better than the estimate because the network round
+trips overlap and Groq serves concurrent requests.
+
+**What Artie got right:** She flagged one edge case honestly on the
+way out — a timeout can leave an in-flight batch rejecting after the
+504 returns. job.abort covers it. She noted it anyway, for the record.
+That is the job.
+
+**What this means:** Voice was the slowest part of the pipeline.
+It just got 4x faster. That is the difference between "a chatbot that
+talks" and "a companion you can hold a conversation with."
+
+The next step is turn detection — knowing when he has finished
+speaking, without waiting for a silence window. That is where
+D1-omni-600M comes in.
