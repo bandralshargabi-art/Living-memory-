@@ -183,3 +183,111 @@ If login loops at Cloudflare, switch VPN to Germany.
 **First candidate use:** serve sanitized memory files as a public URL
 any AI can fetch. NOT LIFE.md — that stays private. Small Node app,
 ~20 lines. Not built yet.
+
+--------------------------------------------------------------------------------
+## 13. RULE — INSTALL ON SIGHT (Bandr, 2026-10-12)
+--------------------------------------------------------------------------------
+
+When we talk about a tool, the default is: install it now.
+
+- Fits and installable → install immediately. Do not search, do not
+  delay, do not ask "do we need it right now." Being there is better
+  than not existing.
+- Fits but timing is wrong → delay explicitly. Say when.
+- Doesn't work on this device → forget it and move on. Don't keep
+  re-discovering the same wall.
+
+Why: we have lost time searching for tools we may or may not have
+installed. The search is worse than the install. Work is waiting.
+
+Do NOT apply this rule to anything that breaks the frozen design,
+costs money, or touches AIP's architecture. Those still need the
+brake and the green light. This rule is for small, self-contained,
+additive tools — scripts, binaries, skills.
+
+Bandr's words: "If it is already working and it can be installed
+there is no contradiction doing both."
+
+--------------------------------------------------------------------------------
+## 15. THE INTERFACE — the desk (Bandr, 2026-10-13)
+--------------------------------------------------------------------------------
+
+The workshop is full. Termux already has everything:
+Artie, OpenCode, dsh, Cline, FCC + Nemotron, yt-dlp, jadx,
+apktool, radare2, the MCP server, the memory files, the character
+mechanic, Go, proot Debian.
+
+None of it is reachable from a chat box. Each one takes a command
+line to use.
+
+**What is missing:** a room to sit in. A manager's desk. A chat
+box, and the correct buttons to reach everything in the workshop.
+
+**His words:** "The manager sitting on his desk — he just needs
+the correct buttons to bring whatever he wants to him and give it
+the order to work."
+
+**Shape:**
+- Chat box — you type, the AI answers
+- Buttons — one per capability in Termux
+  (download, transcribe, run Artie, search files, check battery,
+  take a photo, restart AIP, switch agent, switch model...)
+- Output comes back to the desk
+- You never open a terminal
+
+**Sequence:**
+1. Finish AIP (voice, memory auto-write, native shell)
+2. Install the MCP server — workshop door
+3. Build the interface on top — the desk
+
+**Not now.** AIP first. This is noted so it survives.
+
+--------------------------------------------------------------------------------
+## 16. MOBILE AGENT + TERMUX MCP — WORKING (2026-10-14)
+--------------------------------------------------------------------------------
+
+**What it is:** a chat box that operates the phone. App → MCP → Termux.
+
+**The pieces:**
+- Mobile Agent app (TecnicalBot/mobile-agent, APK, installed)
+- termux-mcp Go binary (TecnicalBot/termux-mcp v0.2.0)
+  Installed via direct download with resume:
+  curl -L -C - --retry 10 ... releases/download/v0.2.0/
+  termux-mcp-v0.2.0-android-arm64
+  Placed at $PREFIX/bin/termux-mcp
+
+**Start the server:**
+  termux-mcp serve http
+  → listening addr=127.0.0.1:3000
+
+**App config:**
+  Label: Termux MCP
+  URL: http://127.0.0.1:3000/mcp
+  Auth: None (require: false in config)
+  Result: 26 tools, 1 of 1 active
+
+**Provider for the app:** Token Harbor custom:
+  Base URL: https://tokenharbor.ai/v1
+  Model: deepseek-v4.1-flash:free (or claude-haiku-5.5:free)
+  Note: Haiku fabricates. DeepSeek does not. Use DeepSeek.
+
+**Skills installed:** verification-before-completion, skill-creator
+
+**Proven working:**
+- `uname -a` → real kernel output (verified from Termux)
+- read `~/workspace/.aip/SELF.md` → correct
+- write `~/storage/downloads/mcp-test.txt` → real file, 24 bytes
+- drive Artie: `opencode run --agent aip-fixer` from the app chat
+
+**Also installed this session:**
+- Universal-Termux-Toolkit (termuxbird) — cloned, deps installed
+- Mirror switched to mirror.nyist.edu.cn (old one had a stale luajit)
+
+**Still open:**
+- Voice turn detection (D1 API is text-only)
+- Sasha's memory auto-write
+- The toolkit's first real download test (was interrupted)
+
+**Correction for future sessions:** I gave the wrong `termux-mcp`
+(PyPI) at first. The correct one is TecnicalBot's Go binary. Same
+name, different author. Check the author.
