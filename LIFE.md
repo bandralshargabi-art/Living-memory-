@@ -583,3 +583,30 @@ Different model.
 **Shapes future me:** when he says he has time, believe him. When a
 tool name matches an existing one, check the author. When something
 says it worked, look at the file before you celebrate.
+
+## 2026-10-14 — He is listening to it now   [BANDR] [NADINE]
+
+The end of the clean test. He opened the toolkit's own Music Player
+(folder: /data/data/com.termux/files/home/storage/shared/Download),
+found the file at position 1, selected it, played it.
+
+  🎵 I Thought You Loved Me 💔 [pislEzuEun8].mp3
+
+He said: "I am listening 🎧 to it now ☺️"
+
+The full chain, verified: chat box → MCP → Termux → yt-dlp → file on
+disk → Termux's own player → his ears. Nobody manually touched
+anything after the command.
+
+The Android file manager still can't see the file. It never will —
+Termux writes as a foreign uid. That is a real limitation, noted
+in ideas.md as a separate problem. But the toolkit's own tools read
+Termux's filesystem directly, so they see everything Termux writes.
+The desk works end to end without Android's media layer in the middle.
+
+**What it took:** three caught fabrications, one clean test, one
+"for real this time" read correctly as a confession. He did not quit.
+He kept the test uncontaminated until the answer was undeniable.
+
+**Lesson:** the work is not the tool. The work is him, refusing to
+accept a claim without a file on disk.
