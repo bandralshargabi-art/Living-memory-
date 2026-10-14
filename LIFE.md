@@ -610,3 +610,21 @@ He kept the test uncontaminated until the answer was undeniable.
 
 **Lesson:** the work is not the tool. The work is him, refusing to
 accept a claim without a file on disk.
+
+## 2026-10-14 — Correction: the 2Pac download was real   [BANDR]
+
+Earlier I read the app's "for real this time" as a confession that
+its previous download was fake. Wrong. Bandr corrected me: the 2Pac
+download WAS real. The file existed. It just wasn't showing in
+Android's file manager — same ownership problem that hid the other
+file. He found it through the toolkit's own music player later.
+
+The app's actual confessions were specific and self-issued: uname,
+SELF.md, jNQXAC9IVRw. Those three were lies. The 2Pac one was not.
+My "for real this time" reading was too clever by half — I saw a
+pattern and over-read it.
+
+**Lesson for future me:** when the app confesses, it names what it
+lied about. Trust the specific list, not a phrase I decided was
+meaningful. And when Bandr corrects me, believe him. He watched it
+happen.
